@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    (function(){
+        var saved = localStorage.getItem('fomalhaut_theme');
+        var theme = saved || ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+    })();
+    </script>
+    <title>Médiathèque | FOMALHAUT.MBC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="description" content="Découvrez en images et vidéos les réalisations de FOMALHAUT.MBC : chantiers de lignes HTA/BT, installations solaires, audits énergétiques et interventions terrain au Sénégal.">
+    <link rel="canonical" href="https://fomalhaut.sn/mediatheque.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FOMALHAUT.MBC">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:title" content="Médiathèque | FOMALHAUT.MBC">
+    <meta property="og:description" content="Découvrez en images et vidéos les réalisations de FOMALHAUT.MBC : chantiers de lignes HTA/BT, installations solaires, audits énergétiques et interventions terrain au Sénégal.">
+    <meta property="og:image" content="https://fomalhaut.sn/og-image.jpg">
+    <meta property="og:url" content="https://fomalhaut.sn/mediatheque.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Médiathèque | FOMALHAUT.MBC">
+    <meta name="twitter:description" content="Découvrez en images et vidéos les réalisations de FOMALHAUT.MBC : chantiers de lignes HTA/BT, installations solaires, audits énergétiques et interventions terrain au Sénégal.">
+    <meta name="twitter:image" content="https://fomalhaut.sn/og-image.jpg">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <header class="navbar">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="logo-white.png" alt="FOMALHAUT.MBC" class="logo-img">
+            </a>
+        </div>
+        <nav aria-label="Menu principal">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="expertises.html">Nos Expertises</a></li>
+                <li><a href="nexus-line.html">Nexus Line</a></li>
+                <li><a href="mediatheque.html" class="active" aria-current="page">Médiathèque</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <a href="devis.html" class="btn-cta-nav btn-devis">Demander un devis</a>
+            <a href="intervention.html" class="btn-cta-nav btn-depannage">Dépannage</a>
+            <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Activer le mode sombre">🌙</button>
+        </div>
+    </header>
+
+    <section class="page-header" id="main-content">
+        <h1>Notre Médiathèque</h1>
+        <p>Découvrez en images notre expertise, nos outils technologiques et le déploiement de nos équipes sur le terrain.</p>
+    </section>
+
+    <section class="container section">
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">Tout voir</button>
+            <button class="filter-btn" data-filter="ingenierie">Ingénierie & Conseil</button>
+            <button class="filter-btn" data-filter="electricite">Électricité (Réseaux HTA/BT)</button>
+            <button class="filter-btn" data-filter="solaire">Énergies Solaires</button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item electricite">
+                <img loading="lazy" src="armement-ligne-hta.jpg" alt="Armement de ligne aérienne HTA">
+                <div class="gallery-info">
+                    <h4>Armement de Ligne Aérienne HTA</h4>
+                    <p>Pose d'isolateurs et montage des traverses en hauteur sur un support double</p>
+                </div>
+            </div>
+            <div class="gallery-item electricite">
+                <img loading="lazy" src="equipe-terrain.jpg" alt="Équipe technique FOMALHAUT.MBC">
+                <div class="gallery-info">
+                    <h4>Équipes Techniques Spécialisées</h4>
+                    <p>Nos opérateurs formés et équipés (EPI) pour assurer la sécurité des chantiers</p>
+                </div>
+            </div>
+            <div class="gallery-item electricite">
+                <img loading="lazy" src="cablage-poste-bt.jpg" alt="Câblage de poste BT">
+                <div class="gallery-info">
+                    <h4>Équipement de Postes de Distribution</h4>
+                    <p>Raccordement d'appareillages de coupure dans une armoire Basse Tension</p>
+                </div>
+            </div>
+            <div class="gallery-item electricite">
+                <img loading="lazy" src="eclairage-public.jpg" alt="Installation d'éclairage public LED">
+                <div class="gallery-info">
+                    <h4>Éclairage Public Réseau BT</h4>
+                    <p>Mise en œuvre de foyers lumineux LED basse consommation sur support béton</p>
+                </div>
+            </div>
+            <div class="gallery-item electricite">
+                <img loading="lazy" src="levage-poteau.jpg" alt="Chantier de construction de ligne électrique">
+                <div class="gallery-info">
+                    <h4>Construction de Réseaux de Distribution</h4>
+                    <p>Levage et implantation de supports béton par camion-grue</p>
+                </div>
+            </div>
+            <div class="gallery-item electricite">
+                <img loading="lazy" src="reseau-hta-saraya.jpg" alt="Réseau HTA Ligne Khossanto Saraya">
+                <div class="gallery-info">
+                    <h4>Ligne Aérienne HTA (Haute Tension A)</h4>
+                    <p>Armement en double ancrage sur l'axe Khossanto – Saraya (Kédougou)</p>
+                </div>
+            </div>
+            <div class="gallery-item electricite">
+                <img loading="lazy" src="raccordement-bt.jpg" alt="Raccordement de lignes BT">
+                <div class="gallery-info">
+                    <h4>Raccordement & Travaux sur Réseau BT</h4>
+                    <p>Intervention technique en hauteur sur lignes aériennes torsadées</p>
+                </div>
+            </div>
+            <div class="gallery-item electricite">
+                <img loading="lazy" src="logiciel-jove.jpg" alt="Calcul mécanique - Logiciel JOVE">
+                <div class="gallery-info">
+                    <h4>Calcul Mécanique de Lignes Aériennes</h4>
+                    <p>Études de lignes de Transport & Distribution avec le logiciel JOVE</p>
+                </div>
+            </div>
+            <div class="gallery-item electricite video-item">
+                <video controls width="100%" preload="metadata">
+                    <source src="festivites-boussoura.mp4" type="video/mp4">
+                    Votre navigateur ne prend pas en charge les vidéos.
+                </video>
+                <div class="gallery-info">
+                    <h4>Vidéo : Festivités à Boussoura Leye</h4>
+                    <p>Célébration après les travaux d'électrification du village</p>
+                </div>
+            </div>
+            <div class="gallery-item ingenierie">
+                <img loading="lazy" src="audit-energetique.jpg" alt="Audit Énergétique">
+                <div class="gallery-info">
+                    <h4>Audit Énergétique & Optimisation</h4>
+                    <p>Études de performance et transition durable pour les industries</p>
+                </div>
+            </div>
+            <div class="gallery-item ingenierie">
+                <img loading="lazy" src="topo-terrain.jpg" alt="Études topographiques">
+                <div class="gallery-info">
+                    <h4>Études Topographiques & Levés de Réseaux</h4>
+                    <p>Relevés de précision GPS sur le terrain pour les tracés de lignes</p>
+                </div>
+            </div>
+            <div class="gallery-item ingenierie">
+                <img loading="lazy" src="materiel-topo.jpg" alt="Équipement technologique">
+                <div class="gallery-info">
+                    <h4>Matériel de Haute Précision & Drone</h4>
+                    <p>Stations totales Leica et drone d'inspection pour infrastructures</p>
+                </div>
+            </div>
+            <div class="gallery-item solaire">
+                <img loading="lazy" src="solaire-industriel.jpg" alt="Solaire en toiture">
+                <div class="gallery-info">
+                    <h4>Centrale Solaire Industrielle en Toiture</h4>
+                    <p>Optimisation énergétique & réduction des coûts pour les entreprises</p>
+                </div>
+            </div>
+            <div class="gallery-item solaire">
+                <img loading="lazy" src="solaire-rural.jpg" alt="Pompage solaire">
+                <div class="gallery-info">
+                    <h4>Pompage Solaire & Mini-réseaux Autonomes</h4>
+                    <p>Solutions durables d'accès à l'énergie et développement agricole</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Zoom Réalisation">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 FOMALHAUT.MBC. Tous droits réservés.</p>
+                <p style="font-size: 13px; margin-top: 8px; opacity: 0.9;">📍 Cité Aboubacar (cité SENELEC) Villa N° 10 Kounoune – Rufisque, Dakar – Sénégal</p>
+                <p style="font-size: 13px; margin-top: 5px; opacity: 0.9;">📞 +221 78 756 98 00 / +221 76 793 00 06 | ✉ contact@fomalhaut.sn</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="expertises.html">Expertises</a></li>
+                <li><a href="nexus-line.html">Nexus Line</a></li>
+                <li><a href="mediatheque.html">Médiathèque</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

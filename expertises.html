@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    (function(){
+        var saved = localStorage.getItem('fomalhaut_theme');
+        var theme = saved || ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+    })();
+    </script>
+    <title>Nos Expertises | FOMALHAUT.MBC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="description" content="Ingénierie & conseil, réseaux électriques HTA/BT, énergies renouvelables solaires et maintenance d'infrastructures : découvrez les expertises de FOMALHAUT.MBC au Sénégal.">
+    <link rel="canonical" href="https://fomalhaut.sn/expertises.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FOMALHAUT.MBC">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:title" content="Nos Expertises | FOMALHAUT.MBC">
+    <meta property="og:description" content="Ingénierie & conseil, réseaux électriques HTA/BT, énergies renouvelables solaires et maintenance d'infrastructures : découvrez les expertises de FOMALHAUT.MBC au Sénégal.">
+    <meta property="og:image" content="https://fomalhaut.sn/og-image.jpg">
+    <meta property="og:url" content="https://fomalhaut.sn/expertises.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nos Expertises | FOMALHAUT.MBC">
+    <meta name="twitter:description" content="Ingénierie & conseil, réseaux électriques HTA/BT, énergies renouvelables solaires et maintenance d'infrastructures : découvrez les expertises de FOMALHAUT.MBC au Sénégal.">
+    <meta name="twitter:image" content="https://fomalhaut.sn/og-image.jpg">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <header class="navbar">
+        <div class="logo-container">
+            <a href="index.html"><img src="logo-white.png" alt="FOMALHAUT.MBC" class="logo-img"></a>
+        </div>
+        <nav aria-label="Menu principal">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="expertises.html" class="active" aria-current="page">Nos Expertises</a></li>
+                <li><a href="nexus-line.html">Nexus Line</a></li>
+                <li><a href="mediatheque.html">Médiathèque</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <a href="devis.html" class="btn-cta-nav btn-devis">Demander un devis</a>
+            <a href="intervention.html" class="btn-cta-nav btn-depannage">Dépannage</a>
+            <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Activer le mode sombre">🌙</button>
+        </div>
+    </header>
+
+    <section class="page-header" id="main-content">
+        <h1>Nos Domaines d’Expertise</h1>
+    </section>
+
+    <!-- DESCRIPTIONS TECHNIQUES ENRICHIES -->
+    <section class="container section grid-expertises">
+        <div class="card">
+            <h3>⚙️ Ingénierie & Conseil</h3>
+            <p>Audits énergétiques approfondis, études topographiques de précision par drone, levés de tracés GPS et calcul mécanique de lignes de transport via le logiciel JOVE.</p>
+        </div>
+        <div class="card">
+            <h3>⚡ Conception & Réalisation</h3>
+            <p>Construction, extension et raccordement de réseaux de distribution électriques HTA/BT, mise en œuvre de postes de transformation et déploiement d'éclairage public LED.</p>
+        </div>
+        <div class="card">
+            <h3>☀️ Énergies Renouvelables</h3>
+            <p>Ingénierie de centrales solaires photovoltaïques en toiture pour l'autoconsommation industrielle, et systèmes de pompage solaire autonomes pour le développement agricole rural.</p>
+        </div>
+        <div class="card">
+            <h3>🛠️ Maintenance & Suivi</h3>
+            <p>Accompagnement technique continu, maintenance préventive/curative et diagnostic réseau pour garantir la pérennité de vos infrastructures privées ou publiques.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 FOMALHAUT.MBC. Tous droits réservés.</p>
+                <p style="font-size: 13px; margin-top: 8px; opacity: 0.9;">📍 Cité Aboubacar (cité SENELEC) Villa N° 10 Kounoune – Rufisque, Dakar – Sénégal</p>
+                <p style="font-size: 13px; margin-top: 5px; opacity: 0.9;">📞 +221 78 756 98 00 / +221 76 793 00 06 | ✉ contact@fomalhaut.sn</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="expertises.html">Expertises</a></li>
+                <li><a href="nexus-line.html">Nexus Line</a></li>
+                <li><a href="mediatheque.html">Médiathèque</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    (function(){
+        var saved = localStorage.getItem('fomalhaut_theme');
+        var theme = saved || ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+    })();
+    </script>
+    <title>Demande de Devis Technique | FOMALHAUT.MBC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="description" content="Obtenez une étude technique chiffrée pour votre projet énergétique : réseaux HTA/BT, solaire photovoltaïque, audit énergétique. Demandez votre devis auprès de FOMALHAUT.MBC.">
+    <link rel="canonical" href="https://fomalhaut.sn/devis.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FOMALHAUT.MBC">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:title" content="Demande de Devis Technique | FOMALHAUT.MBC">
+    <meta property="og:description" content="Obtenez une étude technique chiffrée pour votre projet énergétique : réseaux HTA/BT, solaire photovoltaïque, audit énergétique. Demandez votre devis auprès de FOMALHAUT.MBC.">
+    <meta property="og:image" content="https://fomalhaut.sn/og-image.jpg">
+    <meta property="og:url" content="https://fomalhaut.sn/devis.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Demande de Devis Technique | FOMALHAUT.MBC">
+    <meta name="twitter:description" content="Obtenez une étude technique chiffrée pour votre projet énergétique : réseaux HTA/BT, solaire photovoltaïque, audit énergétique. Demandez votre devis auprès de FOMALHAUT.MBC.">
+    <meta name="twitter:image" content="https://fomalhaut.sn/og-image.jpg">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <header class="navbar">
+        <div class="logo-container">
+            <a href="index.html"><img src="logo-white.png" alt="FOMALHAUT.MBC" class="logo-img"></a>
+        </div>
+        <nav aria-label="Menu principal">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="expertises.html">Nos Expertises</a></li>
+                <li><a href="nexus-line.html">Nexus Line</a></li>
+                <li><a href="mediatheque.html">Médiathèque</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <a href="devis.html" class="btn-cta-nav btn-devis">Demander un devis</a>
+            <a href="intervention.html" class="btn-cta-nav btn-depannage">Dépannage</a>
+            <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Activer le mode sombre">🌙</button>
+        </div>
+    </header>
+
+    <section class="page-header" id="main-content">
+        <h1>Espace Devis &amp; Études Techniques</h1>
+        <p>Confiez-nous les caractéristiques de votre projet pour obtenir une proposition chiffrée sur mesure.</p>
+    </section>
+
+    <section class="container section">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="fomalhaut-devis">
+            <input type="hidden" name="access_key" value="cad79fb6-63d1-4cfc-9fc2-e3e6f4e3da1c">
+            <input type="hidden" name="from_name" value="Site FOMALHAUT - Devis">
+            <div class="form-group">
+                <label for="entreprise">Nom de l'Entreprise / Institution</label>
+                <input type="text" id="entreprise" name="Entreprise_Client" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-name">Nom et Prénom du Responsable</label>
+                <input type="text" id="contact-name" name="Nom_Responsable" required>
+            </div>
+            <div class="form-group">
+                <label for="devis-email">Adresse Email Professionnelle</label>
+                <input type="email" id="devis-email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="devis-phone">Numéro de Téléphone (WhatsApp)</label>
+                <input type="tel" id="devis-phone" name="Telephone_Client" required>
+            </div>
+            <div class="form-group">
+                <label for="secteur">Secteur d'Activité</label>
+                <select id="secteur" name="Secteur_Activite" required>
+                    <option value="" selected disabled>Choisissez un secteur...</option>
+                    <option value="Industriel">Industriel (Usine, Mine, Agroalimentaire)</option>
+                    <option value="Tertiaire">Tertiaire (Immeuble, Bureau, Banque)</option>
+                    <option value="Collectivite">Collectivité Locale / Rural</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="domaine">Domaine Principal des Travaux</label>
+                <select id="domaine" name="Domaine_Technique" required>
+                    <option value="" selected disabled>Choisissez un domaine...</option>
+                    <option value="Reseau_HTA_BT">Réseaux Électriques HTA / BT &amp; Éclairage public</option>
+                    <option value="Solaire_Industriel">Centrale Solaire Photovoltaïque en Toiture</option>
+                    <option value="Solaire_Rural">Pompage Solaire &amp; Mini-réseaux isolés</option>
+                    <option value="Audit_Ingenierie">Ingénierie, Topographie &amp; Audit Énergétique</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cahier-charges">Description détaillée des spécifications / Besoins</label>
+                <textarea id="cahier-charges" name="Cahier_des_Charges" rows="6" placeholder="Précisez les localisations, puissances, longueurs de lignes ou spécifications..." required></textarea>
+            </div>
+            <input type="hidden" name="subject" value="🚨 NOUVELLE DEMANDE DE DEVIS TECHNIQUE - FOMALHAUT.SN">
+            <button type="submit" class="btn-primary">Soumettre le projet pour étude</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 FOMALHAUT.MBC. Tous droits réservés.</p>
+                <p style="font-size: 13px; margin-top: 8px; opacity: 0.9;">📍 Cité Aboubacar (cité SENELEC) Villa N° 10 Kounoune – Rufisque, Dakar – Sénégal</p>
+                <p style="font-size: 13px; margin-top: 5px; opacity: 0.9;">📞 +221 78 756 98 00 / +221 76 793 00 06 | ✉ contact@fomalhaut.sn</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="expertises.html">Expertises</a></li>
+                <li><a href="nexus-line.html">Nexus Line</a></li>
+                <li><a href="mediatheque.html">Médiathèque</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

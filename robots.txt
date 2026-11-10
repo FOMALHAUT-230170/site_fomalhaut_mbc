@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fomalhaut.sn/sitemap.xml

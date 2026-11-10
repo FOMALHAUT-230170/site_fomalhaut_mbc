@@ -1,0 +1,217 @@
+/* ==========================================================================
+   NEXUS LINE — page produit (complète style.css, mêmes variables de thème)
+   ========================================================================== */
+.nx-hero {
+    background: linear-gradient(135deg, var(--pastel-violet) 0%, var(--pastel-bronze) 100%);
+    color: var(--dark);
+    padding: 60px 0;
+}
+
+.nx-hero-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    gap: 40px;
+    align-items: center;
+}
+
+.nx-kicker {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin-bottom: 8px;
+}
+
+.nx-hero h1 {
+    font-size: 44px;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    line-height: 1.1;
+}
+
+.nx-emblem {
+    width: 64px;
+    height: 64px;
+    flex: 0 0 auto;
+}
+
+.nx-tagline {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary);
+    margin: 10px 0 16px;
+}
+
+.nx-hero-text > p {
+    max-width: 560px;
+}
+
+.nx-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.nx-buttons a {
+    margin: 0;
+}
+
+/* Le bouton secondaire n'a pas de dimensions propres dans style.css hors du Hero */
+.nx-buttons .btn-secondary {
+    display: inline-block;
+    padding: 10px 26px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.nx-meta {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #4a3b68;
+}
+
+.nx-hero-shot img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid rgba(50, 16, 92, 0.2);
+    box-shadow: 0 18px 40px rgba(31, 17, 54, 0.25);
+}
+
+.nx-title {
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.nx-sub {
+    color: var(--text-muted);
+    margin: -10px 0 25px;
+}
+
+.nx-band {
+    background-color: var(--surface-alt);
+    transition: background-color 0.3s ease;
+}
+
+.nx-band .card {
+    background: var(--surface);
+}
+
+/* Captures : image entière (pas de recadrage), zoom au clic via script.js */
+.nx-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.nx-gallery .gallery-item {
+    background: var(--surface);
+}
+
+.nx-gallery .gallery-item img {
+    height: 190px;
+    object-fit: contain;
+    object-position: top center;
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--input-border);
+}
+
+.nx-two {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.nx-two > *,
+.nx-gallery > * {
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+.nx-card-accent {
+    border-left-color: var(--secondary);
+}
+
+.nx-list {
+    margin: 12px 0 0 20px;
+}
+
+.nx-list li {
+    margin-bottom: 8px;
+}
+
+.nx-h3-gap {
+    margin-top: 25px;
+}
+
+.nx-small,
+.nx-help {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.nx-help {
+    margin-top: 18px;
+}
+
+.nx-help a {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.nx-hash {
+    display: block;
+    margin-top: 8px;
+    padding: 10px 12px;
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 12px;
+    word-break: break-all;
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    color: var(--text-main);
+}
+
+.nx-cta {
+    text-align: center;
+}
+
+.nx-cta .nx-buttons {
+    justify-content: center;
+}
+
+/* Le bouton secondaire est pensé pour fond clair : lisible aussi en thème sombre */
+[data-theme="dark"] .nx-card-accent .btn-secondary,
+[data-theme="dark"] .nx-band .btn-secondary,
+[data-theme="dark"] .nx-cta .btn-secondary {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+[data-theme="dark"] .nx-card-accent .btn-secondary:hover,
+[data-theme="dark"] .nx-band .btn-secondary:hover,
+[data-theme="dark"] .nx-cta .btn-secondary:hover {
+    background-color: var(--accent);
+    color: var(--dark);
+}
+
+@media (max-width: 992px) {
+    .nx-hero-inner { grid-template-columns: 1fr; }
+    .nx-hero h1 { font-size: 36px; }
+}
+
+@media (max-width: 480px) {
+    .nx-hero { padding: 40px 0; }
+    .nx-hero h1 { font-size: 30px; }
+    .nx-emblem { width: 48px; height: 48px; }
+    .nx-two, .nx-gallery { grid-template-columns: 1fr; }
+    .nx-buttons a { width: 100%; text-align: center; }
+}

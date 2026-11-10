@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    (function(){
+        var saved = localStorage.getItem('fomalhaut_theme');
+        var theme = saved || ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+    })();
+    </script>
+    <title>À Propos | FOMALHAUT.MBC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="description" content="Depuis 2022, FOMALHAUT.MBC accompagne les acteurs industriels, tertiaires et collectivités du Sénégal dans leurs projets énergétiques, avec une politique QHSE rigoureuse et une expertise technique reconnue.">
+    <link rel="canonical" href="https://fomalhaut.sn/apropos.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FOMALHAUT.MBC">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:title" content="À Propos | FOMALHAUT.MBC">
+    <meta property="og:description" content="Depuis 2022, FOMALHAUT.MBC accompagne les acteurs industriels, tertiaires et collectivités du Sénégal dans leurs projets énergétiques, avec une politique QHSE rigoureuse et une expertise technique reconnue.">
+    <meta property="og:image" content="https://fomalhaut.sn/og-image.jpg">
+    <meta property="og:url" content="https://fomalhaut.sn/apropos.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="À Propos | FOMALHAUT.MBC">
+    <meta name="twitter:description" content="Depuis 2022, FOMALHAUT.MBC accompagne les acteurs industriels, tertiaires et collectivités du Sénégal dans leurs projets énergétiques, avec une politique QHSE rigoureuse et une expertise technique reconnue.">
+    <meta name="twitter:image" content="https://fomalhaut.sn/og-image.jpg">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <header class="navbar">
+        <div class="logo-container">
+            <a href="index.html"><img src="logo-white.png" alt="FOMALHAUT.MBC" class="logo-img"></a>
+        </div>
+        <nav aria-label="Menu principal">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html" class="active" aria-current="page">À propos</a></li>
+                <li><a href="expertises.html">Nos Expertises</a></li>
+                <li><a href="nexus-line.html">Nexus Line</a></li>
+                <li><a href="mediatheque.html">Médiathèque</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <a href="devis.html" class="btn-cta-nav btn-devis">Demander un devis</a>
+            <a href="intervention.html" class="btn-cta-nav btn-depannage">Dépannage</a>
+            <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Activer le mode sombre">🌙</button>
+        </div>
+    </header>
+
+    <section class="page-header" id="main-content">
+        <h1>Présentation & Engagements</h1>
+    </section>
+
+    <section class="container section">
+        <div class="about-block">
+            <h2>Notre Histoire & Positionnement</h2>
+            <p>Fondée en 2022 à Dakar, FOMALHAUT.MBC est une entreprise dynamique et innovante spécialisée dans la conception, la réalisation et le conseil en systèmes d'énergie. Nous nous positionnons comme un partenaire stratégique pour les acteurs industriels, tertiaires et résidentiels, en offrant une expertise pointue qui répond aux enjeux de modernisation et de transition énergétique.</p>
+        </div>
+        <div class="about-block" style="margin-top: 40px;">
+            <h2>Notre Mission</h2>
+            <p>Notre mission est de transformer les défis énergétiques en leviers de performance durable. Nous concevons des solutions sur mesure qui allient fiabilité technique, optimisation des coûts et respect des normes environnementales. Chez FOMALHAUT.MBC, nous bâtissons des infrastructures résilientes pour accompagner votre croissance.</p>
+        </div>
+        
+        <!-- BLOC QHSE VALORISÉ -->
+        <div class="about-block qhse-block" style="margin-top: 50px; padding: 30px; background-color: var(--surface-alt); border-radius: 6px; border-left: 5px solid var(--secondary);">
+            <h2>Notre Engagement Qualité & Sécurité (QHSE)</h2>
+            <p style="margin-bottom: 20px;">L'excellence technique ne va pas sans une rigueur opérationnelle absolue. La politique QHSE de FOMALHAUT.MBC est structurée pour garantir la sécurité totale de nos équipes sur le terrain et la conformité de nos installations aux standards internationaux les plus exigeants. Notre objectif : Zéro Accident, optimisation continue des performances et réduction de l'empreinte carbone de nos partenaires.</p>
+            <a href="politique-qhse-fomalhaut.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display: inline-flex; align-items: center; text-decoration: none; padding: 12px 24px;">📄 Télécharger la Politique Qualité (PDF)</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 FOMALHAUT.MBC. Tous droits réservés.</p>
+                <p style="font-size: 13px; margin-top: 8px; opacity: 0.9;">📍 Cité Aboubacar (cité SENELEC) Villa N° 10 Kounoune – Rufisque, Dakar – Sénégal</p>
+                <p style="font-size: 13px; margin-top: 5px; opacity: 0.9;">📞 +221 78 756 98 00 / +221 76 793 00 06 | ✉ contact@fomalhaut.sn</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="expertises.html">Expertises</a></li>
+                <li><a href="nexus-line.html">Nexus Line</a></li>
+                <li><a href="mediatheque.html">Médiathèque</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

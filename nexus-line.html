@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    (function(){
+        var saved = localStorage.getItem('fomalhaut_theme');
+        var theme = saved || ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+    })();
+    </script>
+    <title>Nexus Line | Logiciel de piquetage et d'études de réseaux HTA/BT | FOMALHAUT.MBC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nexus-line.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="description" content="Nexus Line, le logiciel Windows de FOMALHAUT.MBC pour les carnets de piquetage MT/BT, le calcul des chutes de tension BT et les bilans de puissance. Fonctionne hors ligne. Version d'essai gratuite à télécharger.">
+    <link rel="canonical" href="https://fomalhaut.sn/nexus-line.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FOMALHAUT.MBC">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:title" content="Nexus Line | Carnet de piquetage & études de réseaux HTA/BT">
+    <meta property="og:description" content="Carnets de piquetage MT/BT, chutes de tension BT, bilans de puissance, exports Excel et PDF. Logiciel Windows hors ligne par FOMALHAUT.MBC.">
+    <meta property="og:image" content="https://fomalhaut.sn/images/nexus/principal.png">
+    <meta property="og:url" content="https://fomalhaut.sn/nexus-line.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nexus Line | Carnet de piquetage & études de réseaux HTA/BT">
+    <meta name="twitter:description" content="Carnets de piquetage MT/BT, chutes de tension BT, bilans de puissance, exports Excel et PDF. Logiciel Windows hors ligne par FOMALHAUT.MBC.">
+    <meta name="twitter:image" content="https://fomalhaut.sn/images/nexus/principal.png">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Nexus Line",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Études de réseaux électriques HTA/BT",
+      "operatingSystem": "Windows 10, Windows 11 (64 bits)",
+      "softwareVersion": "1.2",
+      "inLanguage": "fr",
+      "url": "https://fomalhaut.sn/nexus-line.html",
+      "downloadUrl": "https://fomalhaut.sn/telechargements/Nexus_Line_Installation.zip",
+      "screenshot": "https://fomalhaut.sn/images/nexus/principal.png",
+      "description": "Carnets de piquetage MT/BT, calcul des chutes de tension BT, bilans de puissance tertiaire et industriel, bibliothèque du matériel, exports Excel, PDF et CSV. Fonctionne sans connexion Internet.",
+      "offers": {
+        "@type": "Offer",
+        "description": "Licence annuelle par poste, sur devis. Version d'essai gratuite limitée à deux études.",
+        "seller": { "@id": "https://fomalhaut.sn/#organization" }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://fomalhaut.sn/#organization",
+        "name": "FOMALHAUT.MBC",
+        "url": "https://fomalhaut.sn/"
+      }
+    }
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <header class="navbar">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="logo-white.png" alt="FOMALHAUT.MBC" class="logo-img">
+            </a>
+        </div>
+        <nav aria-label="Menu principal">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="expertises.html">Nos Expertises</a></li>
+                <li><a href="nexus-line.html" class="active" aria-current="page">Nexus Line</a></li>
+                <li><a href="mediatheque.html">Médiathèque</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <a href="devis.html" class="btn-cta-nav btn-devis">Demander un devis</a>
+            <a href="intervention.html" class="btn-cta-nav btn-depannage">Dépannage</a>
+            <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Activer le mode sombre">🌙</button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- EN-TÊTE PRODUIT -->
+        <section class="nx-hero">
+            <div class="container nx-hero-inner">
+                <div class="nx-hero-text">
+                    <p class="nx-kicker">Logiciel édité par FOMALHAUT.MBC</p>
+                    <h1><img src="images/nexus/embleme.png" alt="" class="nx-emblem" width="64" height="64"> Nexus Line</h1>
+                    <p class="nx-tagline">Carnet de piquetage &amp; études de réseaux HTA / BT</p>
+                    <p>Saisissez vos supports sur le terrain ou au bureau, calculez les chutes de tension et les bilans de puissance, puis produisez en un clic des carnets et notes de calcul prêts à remettre, en Excel et en PDF.</p>
+                    <div class="hero-buttons nx-buttons">
+                        <a href="telechargements/Nexus_Line_Installation.zip" class="btn-primary" download>⬇ Télécharger la version d'essai</a>
+                        <a href="#licence" class="btn-secondary">Obtenir une licence</a>
+                    </div>
+                    <p class="nx-meta"><span data-nx="version">Version 1.2</span> · Windows 10 / 11 · <span data-nx="taille">20,1 Mo</span> · Fonctionne sans Internet</p>
+                </div>
+                <div class="nx-hero-shot">
+                    <img src="images/nexus/principal.png" alt="Écran principal de Nexus Line : historique des appuis et saisie d'un support" width="1920" height="991">
+                </div>
+            </div>
+        </section>
+
+        <!-- FONCTIONNALITÉS -->
+        <section class="container section">
+            <h2 class="nx-title">Ce que fait Nexus Line</h2>
+            <div class="grid-expertises">
+                <div class="card">
+                    <h3>📍 Carnets de piquetage MT et BT</h3>
+                    <p>Saisie support par support : numéros amont et courant, type de support, câble, longueur, armements et équipements. Historique modifiable, recherche, clôture du piquetage.</p>
+                </div>
+                <div class="card">
+                    <h3>⚡ Chutes de tension BT</h3>
+                    <p>Calcul par tronçon avec foisonnement par tranches (NF C 14-100), tension de départ mesurée sur site, seuil de 5 % et alerte de charge à 80 % de l'intensité admissible.</p>
+                </div>
+                <div class="card">
+                    <h3>📊 Bilans de puissance</h3>
+                    <p>Bilans tertiaires et industriels par tableau (méthode UTE C 15-105) : coefficients Ks et Ku, réserve d'extension, puissance totale et courant d'emploi au TGBT.</p>
+                </div>
+                <div class="card">
+                    <h3>🗂️ Bibliothèque du matériel</h3>
+                    <p>Supports, câbles, armements et équipements communs à toutes vos études, avec import et export Excel pour l'adapter à vos propres références.</p>
+                </div>
+                <div class="card">
+                    <h3>📄 Documents prêts à remettre</h3>
+                    <p>Carnets, récapitulatifs du matériel, notes de calcul et bilans exportés en Excel, PDF et CSV, aux couleurs de votre projet.</p>
+                </div>
+                <div class="card">
+                    <h3>🔒 100 % hors ligne</h3>
+                    <p>Aucune connexion Internet n'est nécessaire : ni pour l'installation, ni pour l'activation, ni pour le travail sur le terrain. Vos études restent sur votre ordinateur.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CAPTURES -->
+        <section class="nx-band">
+            <div class="container section">
+                <h2 class="nx-title">Aperçu du logiciel</h2>
+                <p class="nx-sub">Cliquez sur une image pour l'agrandir. Données d'un projet de démonstration.</p>
+                <div class="nx-gallery">
+                    <div class="gallery-item">
+                        <img loading="lazy" src="images/nexus/chutes.png" alt="Calcul des chutes de tension du réseau BT">
+                        <div class="gallery-info"><h4>Chutes de tension BT</h4><p>Calcul par tronçon, charge, tension réelle et statut</p></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img loading="lazy" src="images/nexus/bilan.png" alt="Bilan de puissance tertiaire par tableau">
+                        <div class="gallery-info"><h4>Bilan de puissance</h4><p>Tableaux, équipements, foisonnement et puissance totale</p></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img loading="lazy" src="images/nexus/bibliotheque.png" alt="Bibliothèque du matériel">
+                        <div class="gallery-info"><h4>Bibliothèque du matériel</h4><p>Supports, câbles, armements et équipements</p></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img loading="lazy" src="images/nexus/export-piquetage.png" alt="Aperçu d'un carnet de piquetage exporté">
+                        <div class="gallery-info"><h4>Carnet exporté</h4><p>Document Excel / PDF prêt à remettre</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ESSAI ET LICENCE -->
+        <section class="container section" id="licence">
+            <h2 class="nx-title">Version d'essai et licence</h2>
+            <div class="nx-two">
+                <div class="card">
+                    <h3>🎁 Version d'essai gratuite</h3>
+                    <p>Téléchargez et installez Nexus Line sans engagement. Sans licence, le logiciel fonctionne en version d'essai :</p>
+                    <ul class="nx-list">
+                        <li>deux études (deux projets) au plus ;</li>
+                        <li>toutes les fonctions de calcul et d'export disponibles ;</li>
+                        <li>les documents portent la mention « VERSION D'ÉVALUATION ».</li>
+                    </ul>
+                </div>
+                <div class="card nx-card-accent">
+                    <h3>🔑 Licence annuelle par poste</h3>
+                    <p>Études illimitées et documents sans mention d'évaluation, pour un an sur un ordinateur. <strong>Tarif sur devis.</strong></p>
+                    <ol class="nx-list">
+                        <li>Dans Nexus Line, cliquez sur <strong>Licence</strong> et copiez votre <strong>code machine</strong>.</li>
+                        <li>Envoyez-le à FOMALHAUT.MBC par WhatsApp ou e-mail.</li>
+                        <li>Vous recevez une clé <strong>NXL-…</strong> : collez-la puis cliquez sur <strong>Activer</strong>.</li>
+                    </ol>
+                    <div class="nx-buttons">
+                        <a href="https://wa.me/221767930006?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20une%20licence%20Nexus%20Line." class="btn-primary" target="_blank" rel="noopener noreferrer">💬 Devis par WhatsApp</a>
+                        <a href="mailto:contact@fomalhaut.sn?subject=Licence%20Nexus%20Line" class="btn-secondary">✉ Par e-mail</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TÉLÉCHARGEMENT -->
+        <section class="nx-band" id="telecharger">
+            <div class="container section">
+                <h2 class="nx-title">Télécharger Nexus Line</h2>
+                <div class="nx-two">
+                    <div class="card">
+                        <h3>⬇ Installation</h3>
+                        <ol class="nx-list">
+                            <li>Téléchargez le fichier <strong>Nexus_Line_Installation.zip</strong>.</li>
+                            <li>Faites un clic droit sur le fichier puis <strong>Extraire tout</strong>.</li>
+                            <li>Double-cliquez sur <strong>Installer_Nexus_Line_<span data-nx="v">1.2</span>.exe</strong>.</li>
+                            <li>Si Windows affiche « Windows a protégé votre ordinateur », cliquez sur <strong>Informations complémentaires</strong> puis <strong>Exécuter quand même</strong>. Ce message est normal pour un logiciel professionnel diffusé directement par son éditeur.</li>
+                        </ol>
+                        <div class="nx-buttons">
+                            <a href="telechargements/Nexus_Line_Installation.zip" class="btn-primary" download>⬇ Télécharger (<span data-nx="taille">20,1 Mo</span>)</a>
+                            <a href="telechargements/Manuel_Nexus_Line.pdf" class="btn-secondary" target="_blank" rel="noopener">📘 Manuel utilisateur (PDF)</a>
+                        </div>
+                        <p class="nx-help">Le téléchargement est bloqué par votre navigateur ? Appelez-nous ou écrivez-nous sur WhatsApp au <a href="tel:+221787569800">+221 78 756 98 00</a> / <a href="https://wa.me/221767930006">+221 76 793 00 06</a> : nous vous envoyons le fichier.</p>
+                    </div>
+                    <div class="card">
+                        <h3>💻 Configuration requise</h3>
+                        <ul class="nx-list">
+                            <li>Windows 10 ou Windows 11 (64 bits)</li>
+                            <li>200 Mo d'espace disque libre</li>
+                            <li>Écran de 1366 × 768 pixels minimum</li>
+                            <li>Excel (ou LibreOffice) et un lecteur PDF pour ouvrir les documents produits</li>
+                        </ul>
+                        <h3 class="nx-h3-gap">🛡️ Fichier officiel</h3>
+                        <p class="nx-small"><span data-nx="version">Version 1.2</span> du <span data-nx="date">09/11/2026</span>. Empreinte SHA-256 de l'installateur :</p>
+                        <code class="nx-hash" data-nx="sha256">167AD3F129EAA47C2912CD8100F5B2462496F7551FE22F2629A6CCC7228D2E27</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="container section nx-cta">
+            <h2 class="nx-title">Une question sur Nexus Line ?</h2>
+            <p>Démonstration, devis de licence, adaptation à vos références de matériel : notre bureau d'études vous répond.</p>
+            <div class="hero-buttons nx-buttons">
+                <a href="tel:+221787569800" class="btn-primary">📞 +221 78 756 98 00</a>
+                <a href="tel:+221767930006" class="btn-primary">📞 +221 76 793 00 06</a>
+                <a href="contact.html" class="btn-secondary">Nous écrire</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Capture agrandie de Nexus Line">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 FOMALHAUT.MBC. Tous droits réservés.</p>
+                <p style="font-size: 13px; margin-top: 8px; opacity: 0.9;">📍 Cité Aboubacar (cité SENELEC) Villa N° 10 Kounoune – Rufisque, Dakar – Sénégal</p>
+                <p style="font-size: 13px; margin-top: 5px; opacity: 0.9;">📞 +221 78 756 98 00 / +221 76 793 00 06 | ✉ contact@fomalhaut.sn</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="expertises.html">Expertises</a></li>
+                <li><a href="nexus-line.html">Nexus Line</a></li>
+                <li><a href="mediatheque.html">Médiathèque</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Informations de version (mises à jour par Publier_version_commerciale.ps1) -->
+    <script src="telechargements/nexus-line-version.js"></script>
+    <script>
+    (function(){
+        var r = window.NEXUS_RELEASE;
+        if (!r) return;
+        function set(key, text){ document.querySelectorAll('[data-nx="' + key + '"]').forEach(function(el){ el.textContent = text; }); }
+        if (r.version) { set('version', 'Version ' + r.version); set('v', r.version); }
+        if (r.taille) set('taille', String(r.taille).replace('.', ','));
+        if (r.date) set('date', r.date);
+        if (r.sha256) set('sha256', r.sha256);
+    })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
