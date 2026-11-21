@@ -139,4 +139,54 @@ document.addEventListener("DOMContentLoaded", function() {
             finally { button.innerText = originalText; button.disabled = false; }
         });
     }
+    // 7. BLOG : FILTRAGE DES ARTICLES PAR RUBRIQUE
+    const blogFilterButtons = document.querySelectorAll(".blog-filter-btn");
+    const blogArticles = document.querySelectorAll(".article-card[data-rubrique]");
+    const blogEmpty = document.getElementById("blog-empty");
+    function filtrerBlog(rubrique) {
+        let visibles = 0;
+        blogFilterButtons.forEach(btn => {
+            const actif = btn.getAttribute("data-rubrique") === rubrique;
+            btn.classList.toggle("active", actif);
+            btn.setAttribute("aria-pressed", actif ? "true" : "false");
+        });
+        blogArticles.forEach(article => {
+            const montrer = rubrique === "all" || article.getAttribute("data-rubrique") === rubrique;
+            article.hidden = !montrer;
+            if (montrer) visibles++;
+        });
+        if (blogEmpty) blogEmpty.hidden = visibles > 0;
+    }
+    if (blogFilterButtons.length > 0) {
+        blogFilterButtons.forEach(btn => {
+            btn.addEventListener("click", function() { filtrerBlog(this.getAttribute("data-rubrique")); });
+        });
+        // Les cartes de rubriques filtrent la liste puis y font défiler la page
+        document.querySelectorAll(".rubrique-card[data-rubrique]").forEach(card => {
+            card.addEventListener("click", function(e) {
+                e.preventDefault();
+                const rubrique = this.getAttribute("data-rubrique");
+                filtrerBlog(rubrique);
+                if (window.history && history.replaceState) history.replaceState(null, "", "#rubrique-" + rubrique);
+                const liste = document.getElementById("articles");
+                if (liste) liste.scrollIntoView({ behavior: "smooth", block: "start" });
+            });
+        });
+        // Lien direct vers une rubrique : blog.html#rubrique-solaire
+        const ancre = window.location.hash.replace("#rubrique-", "");
+        if (ancre && window.location.hash.indexOf("#rubrique-") === 0) filtrerBlog(ancre);
+    }
+
+    // 8. ARTICLE : LIENS DE PARTAGE (adresse de la page courante)
+    const shareLinks = document.querySelectorAll("[data-share]");
+    if (shareLinks.length > 0) {
+        const url = encodeURIComponent(window.location.href.split("#")[0]);
+        const titre = encodeURIComponent(document.title);
+        shareLinks.forEach(link => {
+            const reseau = link.getAttribute("data-share");
+            if (reseau === "whatsapp") link.href = "https://wa.me/?text=" + titre + "%20" + url;
+            if (reseau === "facebook") link.href = "https://www.facebook.com/sharer/sharer.php?u=" + url;
+            if (reseau === "linkedin") link.href = "https://www.linkedin.com/sharing/share-offsite/?url=" + url;
+        });
+    }
 });

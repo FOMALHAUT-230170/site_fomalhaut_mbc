@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    (function(){
+        var saved = localStorage.getItem('fomalhaut_theme');
+        var theme = saved || ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+    })();
+    </script>
+    <title>L'Électricité au cœur des villages | Blog FOMALHAUT.MBC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="description" content="L'Électricité au cœur des villages : un blog qui pose un regard humain sur l'électrification rurale au Sénégal — témoignages, explications simples, réalités du terrain et solutions.">
+    <link rel="canonical" href="https://fomalhaut.sn/blog.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="L'Électricité au cœur des villages">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:title" content="L'Électricité au cœur des villages | Blog FOMALHAUT.MBC">
+    <meta property="og:description" content="L'Électricité au cœur des villages : un blog qui pose un regard humain sur l'électrification rurale au Sénégal — témoignages, explications simples, réalités du terrain et solutions.">
+    <meta property="og:image" content="https://fomalhaut.sn/og-image.jpg">
+    <meta property="og:url" content="https://fomalhaut.sn/blog.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="L'Électricité au cœur des villages | Blog FOMALHAUT.MBC">
+    <meta name="twitter:description" content="L'Électricité au cœur des villages : un blog qui pose un regard humain sur l'électrification rurale au Sénégal — témoignages, explications simples, réalités du terrain et solutions.">
+    <meta name="twitter:image" content="https://fomalhaut.sn/og-image.jpg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "L'Électricité au cœur des villages",
+      "description": "Un regard humain sur l'électrification rurale au Sénégal.",
+      "url": "https://fomalhaut.sn/blog.html",
+      "inLanguage": "fr",
+      "publisher": { "@type": "Organization", "name": "FOMALHAUT.MBC", "url": "https://fomalhaut.sn/", "logo": "https://fomalhaut.sn/logo.png" }
+    }
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <header class="navbar">
+        <div class="logo-container">
+            <a href="index.html"><img src="logo-white.png" alt="FOMALHAUT.MBC" class="logo-img"></a>
+        </div>
+        <nav aria-label="Menu principal">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="expertises.html">Nos Expertises</a></li>
+                <li><a href="nexus-line.html">Nexus Line</a></li>
+                <li><a href="mediatheque.html">Médiathèque</a></li>
+                <li><a href="blog.html" class="active" aria-current="page">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <a href="devis.html" class="btn-cta-nav btn-devis">Demander un devis</a>
+            <a href="intervention.html" class="btn-cta-nav btn-depannage">Dépannage</a>
+            <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Activer le mode sombre">🌙</button>
+        </div>
+    </header>
+
+    <section class="blog-hero" id="main-content">
+        <div class="blog-hero-inner">
+            <span class="blog-kicker">Le blog</span>
+            <h1>L'Électricité au cœur des villages</h1>
+            <p class="blog-tagline">La lumière, l'énergie et le développement des territoires ruraux.<br>Un regard humain sur l'électrification rurale au Sénégal.</p>
+            <p class="blog-signature">« Derrière chaque village électrifié, il y a des vies qui changent. »</p>
+        </div>
+    </section>
+
+    <section class="section container">
+        <div class="blog-intro">
+            <div>
+                <h2>Pourquoi ce blog ?</h2>
+                <p>On parle souvent de l'électrification rurale en kilomètres de lignes ou en nombre de raccordements. Ces chiffres comptent, mais ils ne disent pas tout. Ils ne racontent pas l'élève qui peut enfin réviser le soir, le commerçant qui garde sa boutique ouverte après la tombée de la nuit, ni le poste de santé qui conserve ses médicaments au frais.</p>
+                <p>Ici, nous voulons parler des personnes avant de parler des équipements. Expliquer simplement comment fonctionnent les réseaux et les solutions solaires, regarder honnêtement les difficultés du terrain, et donner la parole à celles et ceux qui font avancer l'accès à l'électricité dans nos villages.</p>
+                <a href="blog-apropos.html" class="text-link">Notre ligne éditoriale &rarr;</a>
+            </div>
+            <aside class="blog-values" aria-label="Nos engagements">
+                <h3>Nos engagements</h3>
+                <ul>
+                    <li><strong>Humains</strong> : les personnes d'abord, les équipements ensuite.</li>
+                    <li><strong>Accessibles</strong> : la technique expliquée à tout le monde.</li>
+                    <li><strong>Proches du terrain</strong> : les villages et leurs réalités.</li>
+                    <li><strong>Constructifs</strong> : les problèmes, mais aussi les pistes.</li>
+                    <li><strong>Crédibles</strong> : faits vérifiés, analyses et opinions bien distingués.</li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+    <section class="container" aria-labelledby="titre-rubriques">
+        <h2 class="blog-section-title" id="titre-rubriques">Nos six rubriques</h2>
+        <p class="blog-section-lead">Choisissez un thème pour voir les articles qui s'y rattachent.</p>
+        <div class="rubriques-grid">
+                <a href="#rubrique-villages" class="rubrique-card" data-rubrique="villages">
+                    <img src="eclairage-public.jpg" alt="Poteau d'éclairage public dans un village" loading="lazy" style="object-position: center 85%;">
+                    <div class="rubrique-card-body">
+                        <span class="rubrique-num">Rubrique 1</span>
+                        <h3>La vie dans nos villages</h3>
+                        <p>Témoignages, quotidien des familles, écoles, centres de santé, commerces : ce qui change quand le courant arrive.</p>
+                    </div>
+                </a>
+                <a href="#rubrique-comprendre" class="rubrique-card" data-rubrique="comprendre">
+                    <img src="armement-ligne-hta.jpg" alt="Techniciens équipant des poteaux d'une ligne électrique" loading="lazy">
+                    <div class="rubrique-card-body">
+                        <span class="rubrique-num">Rubrique 2</span>
+                        <h3>Comprendre l'électrification rurale</h3>
+                        <p>Réseaux MT/BT, postes de transformation, branchements et raccordements, expliqués sans jargon.</p>
+                    </div>
+                </a>
+                <a href="#rubrique-solaire" class="rubrique-card" data-rubrique="solaire">
+                    <img src="solaire-rural.jpg" alt="Habitantes devant une installation de panneaux solaires" loading="lazy">
+                    <div class="rubrique-card-body">
+                        <span class="rubrique-num">Rubrique 3</span>
+                        <h3>Le solaire et les énergies renouvelables</h3>
+                        <p>Photovoltaïque, pompage solaire, mini-réseaux, stockage : les solutions adaptées aux zones isolées.</p>
+                    </div>
+                </a>
+                <a href="#rubrique-terrain" class="rubrique-card" data-rubrique="terrain">
+                    <img src="levage-poteau.jpg" alt="Camion-grue levant un poteau électrique sur un chantier" loading="lazy">
+                    <div class="rubrique-card-body">
+                        <span class="rubrique-num">Rubrique 4</span>
+                        <h3>Les réalités du terrain</h3>
+                        <p>Travaux, difficultés d'accès, sécurité, maintenance et qualité des installations.</p>
+                    </div>
+                </a>
+                <a href="#rubrique-developpement" class="rubrique-card" data-rubrique="developpement">
+                    <img src="raccordement-bt.jpg" alt="Technicien réalisant un raccordement basse tension en haut d'un poteau" loading="lazy">
+                    <div class="rubrique-card-body">
+                        <span class="rubrique-num">Rubrique 5</span>
+                        <h3>Électricité et développement local</h3>
+                        <p>Agriculture, transformation des produits, entrepreneuriat, santé, éducation et emploi.</p>
+                    </div>
+                </a>
+                <a href="#rubrique-regards" class="rubrique-card" data-rubrique="regards">
+                    <img src="equipe-terrain.jpg" alt="Équipe de techniciens en tenue de sécurité sur le terrain" loading="lazy">
+                    <div class="rubrique-card-body">
+                        <span class="rubrique-num">Rubrique 6</span>
+                        <h3>Regards et initiatives</h3>
+                        <p>Paroles de techniciens, de collectivités, d'associations, d'acteurs de l'énergie et d'habitants.</p>
+                    </div>
+                </a>
+        </div>
+    </section>
+
+    <section class="section container" id="articles" aria-labelledby="titre-articles">
+        <h2 class="blog-section-title" id="titre-articles">Les articles</h2>
+        <p class="blog-section-lead">Un nouvel article chaque semaine. Voici les sujets de nos trois premiers mois.</p>
+        <div class="blog-filters" role="group" aria-label="Filtrer par rubrique">
+                <button type="button" class="blog-filter-btn active" data-rubrique="all" aria-pressed="true">Tous les sujets</button>
+                <button type="button" class="blog-filter-btn" data-rubrique="villages" aria-pressed="false">La vie dans nos villages</button>
+                <button type="button" class="blog-filter-btn" data-rubrique="comprendre" aria-pressed="false">Comprendre l'électrification rurale</button>
+                <button type="button" class="blog-filter-btn" data-rubrique="solaire" aria-pressed="false">Le solaire et les énergies renouvelables</button>
+                <button type="button" class="blog-filter-btn" data-rubrique="terrain" aria-pressed="false">Les réalités du terrain</button>
+                <button type="button" class="blog-filter-btn" data-rubrique="developpement" aria-pressed="false">Électricité et développement local</button>
+                <button type="button" class="blog-filter-btn" data-rubrique="regards" aria-pressed="false">Regards et initiatives</button>
+        </div>
+        <div class="articles-grid">
+                <article class="article-card" data-rubrique="villages">
+                    <span class="article-tag">La vie dans nos villages</span>
+                    <h3>Quand la lumière arrive au village : bien plus qu'une question d'électricité</h3>
+                    <p>Ce que change l'arrivée du courant dans une famille, une école ou un commerce, bien au-delà des ampoules.</p>
+                    <span class="article-status">À paraître</span>
+                </article>
+                <article class="article-card" data-rubrique="villages">
+                    <span class="article-tag">La vie dans nos villages</span>
+                    <h3>Vivre sans électricité au Sénégal : ces réalités dont on parle peu</h3>
+                    <p>Les soirées qui s'arrêtent tôt, le téléphone qu'on va recharger ailleurs : le quotidien des foyers encore sans courant.</p>
+                    <span class="article-status">À paraître</span>
+                </article>
+                <article class="article-card" data-rubrique="comprendre">
+                    <span class="article-tag">Comprendre l'électrification rurale</span>
+                    <h3>Pourquoi certains villages ont-ils encore des difficultés d'accès à l'électricité ?</h3>
+                    <p>Distances, habitat dispersé, coût des lignes : pourquoi le réseau n'avance pas partout au même rythme.</p>
+                    <span class="article-status">À paraître</span>
+                </article>
+                <article class="article-card" data-rubrique="comprendre">
+                    <span class="article-tag">Comprendre l'électrification rurale</span>
+                    <h3>Électrifier un village : que se passe-t-il réellement avant l'arrivée du courant ?</h3>
+                    <p>Études, tracés, autorisations, chantier : les étapes souvent invisibles qui précèdent la mise sous tension.</p>
+                    <span class="article-status">À paraître</span>
+                </article>
+                <article class="article-card" data-rubrique="comprendre">
+                    <span class="article-tag">Comprendre l'électrification rurale</span>
+                    <h3>Comment fonctionne un réseau électrique rural ?</h3>
+                    <p>De la ligne moyenne tension au compteur de la maison, le chemin de l'électricité expliqué simplement.</p>
+                    <span class="article-status">À paraître</span>
+                </article>
+                <article class="article-card" data-rubrique="solaire">
+                    <span class="article-tag">Le solaire et les énergies renouvelables</span>
+                    <h3>Électricité solaire : une solution pour les villages éloignés ?</h3>
+                    <p>Kits individuels, mini-réseaux : ce que le solaire permet vraiment, et où il trouve ses limites.</p>
+                    <span class="article-status">À paraître</span>
+                </article>
+                <article class="article-card" data-rubrique="comprendre">
+                    <span class="article-tag">Comprendre l'électrification rurale</span>
+                    <h3>À quoi sert un poste de transformation dans un village ?</h3>
+                    <p>Le rôle de cet équipement que l'on croise au bord des routes, et pourquoi on ne peut pas s'en passer.</p>
+                    <span class="article-status">À paraître</span>
+                </article>
+                <article class="article-card" data-rubrique="solaire">
+                    <span class="article-tag">Le solaire et les énergies renouvelables</span>
+                    <h3>Le pompage solaire : quand l'énergie facilite l'accès à l'eau</h3>
+                    <p>Maraîchage, abreuvement, eau potable : comment le soleil fait monter l'eau.</p>
+                    <span class="article-status">À paraître</span>
+                </article>
+                <article class="article-card" data-rubrique="developpement">
+                    <span class="article-tag">Électricité et développement local</span>
+                    <h3>Une école électrifiée, quelles nouvelles possibilités pour les élèves ?</h3>
+                    <p>Éclairer les salles, brancher un ordinateur : ce que le courant ouvre pour apprendre.</p>
+                    <span class="article-status">À paraître</span>
+                </article>
+                <article class="article-card" data-rubrique="terrain">
+                    <span class="article-tag">Les réalités du terrain</span>
+                    <h3>Pourquoi la maintenance des réseaux électriques est-elle aussi importante que leur construction ?</h3>
+                    <p>Un réseau mal entretenu se dégrade vite : l'entretien conditionne la durée de vie des investissements.</p>
+                    <span class="article-status">À paraître</span>
+                </article>
+                <article class="article-card" data-rubrique="developpement">
+                    <span class="article-tag">Électricité et développement local</span>
+                    <h3>L'électricité peut-elle transformer les activités économiques des villages ?</h3>
+                    <p>Moulins, chambres froides, ateliers : ce que l'électricité rend possible, et ce qu'il faut en plus.</p>
+                    <span class="article-status">À paraître</span>
+                </article>
+                <article class="article-card" data-rubrique="regards">
+                    <span class="article-tag">Regards et initiatives</span>
+                    <h3>Électrification rurale au Sénégal : les défis qui restent à relever</h3>
+                    <p>Ce qui reste à faire pour que l'accès à l'énergie profite à tous les territoires.</p>
+                    <span class="article-status">À paraître</span>
+                </article>
+        </div>
+        <p class="blog-empty" id="blog-empty" hidden>Les premiers articles de cette rubrique arrivent bientôt.</p>
+    </section>
+
+    <section class="container">
+        <div class="blog-contribute">
+            <div>
+                <h2>Vous avez une histoire à partager ?</h2>
+                <p>Habitant, enseignant, agent de santé, technicien, élu local ou membre d'une association : si l'arrivée de l'électricité a changé quelque chose dans votre village, ou si vous rencontrez encore des difficultés, nous aimerions vous écouter. Chaque témoignage est publié uniquement avec votre accord.</p>
+            </div>
+            <a href="contact.html" class="btn-primary">Proposer un témoignage</a>
+        </div>
+        <p class="blog-editor-note">Un blog édité par FOMALHAUT.MBC. <a href="blog-apropos.html">En savoir plus sur notre démarche</a>.</p>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 FOMALHAUT.MBC. Tous droits réservés.</p>
+                <p style="font-size: 13px; margin-top: 8px; opacity: 0.9;">📍 Cité Aboubacar (cité SENELEC) Villa N° 10 Kounoune – Rufisque, Dakar – Sénégal</p>
+                <p style="font-size: 13px; margin-top: 5px; opacity: 0.9;">📞 +221 78 756 98 00 / +221 76 793 00 06 | ✉ contact@fomalhaut.sn / fomalhaut.kd@gmail.com</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="expertises.html">Expertises</a></li>
+                <li><a href="nexus-line.html">Nexus Line</a></li>
+                <li><a href="mediatheque.html">Médiathèque</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

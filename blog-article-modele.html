@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    (function(){
+        var saved = localStorage.getItem('fomalhaut_theme');
+        var theme = saved || ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+    })();
+    </script>
+    <title>[Titre de l'article] | L'Électricité au cœur des villages</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="description" content="[Résumé de l'article en une ou deux phrases, 150 caractères environ : il apparaît dans Google et dans les aperçus WhatsApp/Facebook.]">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://fomalhaut.sn/[nom-du-fichier].html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="L'Électricité au cœur des villages">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:title" content="[Titre de l'article] | L'Électricité au cœur des villages">
+    <meta property="og:description" content="[Résumé de l'article en une ou deux phrases, 150 caractères environ : il apparaît dans Google et dans les aperçus WhatsApp/Facebook.]">
+    <meta property="og:image" content="https://fomalhaut.sn/og-image.jpg">
+    <meta property="og:url" content="https://fomalhaut.sn/[nom-du-fichier].html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="[Titre de l'article] | L'Électricité au cœur des villages">
+    <meta name="twitter:description" content="[Résumé de l'article en une ou deux phrases, 150 caractères environ : il apparaît dans Google et dans les aperçus WhatsApp/Facebook.]">
+    <meta name="twitter:image" content="https://fomalhaut.sn/og-image.jpg">
+    <!-- Données structurées : remplacer les valeurs entre crochets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "[Titre de l'article]",
+      "datePublished": "[AAAA-MM-JJ]",
+      "inLanguage": "fr",
+      "isPartOf": { "@type": "Blog", "name": "L'Électricité au cœur des villages", "url": "https://fomalhaut.sn/blog.html" },
+      "publisher": { "@type": "Organization", "name": "FOMALHAUT.MBC", "logo": "https://fomalhaut.sn/logo.png" }
+    }
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <header class="navbar">
+        <div class="logo-container">
+            <a href="index.html"><img src="logo-white.png" alt="FOMALHAUT.MBC" class="logo-img"></a>
+        </div>
+        <nav aria-label="Menu principal">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="expertises.html">Nos Expertises</a></li>
+                <li><a href="nexus-line.html">Nexus Line</a></li>
+                <li><a href="mediatheque.html">Médiathèque</a></li>
+                <li><a href="blog.html" class="active" aria-current="page">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <a href="devis.html" class="btn-cta-nav btn-devis">Demander un devis</a>
+            <a href="intervention.html" class="btn-cta-nav btn-depannage">Dépannage</a>
+            <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Activer le mode sombre">🌙</button>
+        </div>
+    </header>
+
+    <!-- ======================================================================
+         MODÈLE D'ARTICLE — À COPIER POUR CHAQUE NOUVEL ARTICLE
+         1. Copier ce fichier et le renommer (ex. : blog-quand-la-lumiere-arrive.html)
+         2. Remplacer tout ce qui est entre [crochets], y compris dans le <head>
+         3. Supprimer la ligne <meta name="robots" content="noindex, nofollow">
+            et le bandeau jaune ci-dessous
+         4. Dans blog.html : transformer la carte de l'article en lien et
+            remplacer « À paraître » par la date de publication
+         5. Ajouter l'adresse de l'article dans sitemap.xml
+         ====================================================================== -->
+    <div class="template-banner">Page modèle : ne pas publier telle quelle. Remplacez les textes entre [crochets].</div>
+
+    <header class="article-header" id="main-content">
+        <div class="article-header-inner">
+            <p class="breadcrumb"><a href="blog.html">Blog</a> › <a href="blog.html#rubrique-villages">[Nom de la rubrique]</a></p>
+            <span class="article-tag">[Nom de la rubrique]</span>
+            <h1>[Titre de l'article]</h1>
+            <p class="article-meta">Publié le [jour mois année] · Lecture : [5] min · Par [prénom nom ou « la rédaction »]</p>
+        </div>
+    </header>
+
+    <article class="section container">
+        <div class="article-body">
+            <!-- 1. UNE ENTRÉE HUMAINE : une situation que le lecteur peut imaginer -->
+            <p class="article-chapo">[Chapeau : deux ou trois phrases qui plongent le lecteur dans une situation concrète. Exemple de ton : « Imaginez un village où, à la tombée de la nuit, les activités s'arrêtent progressivement… »]</p>
+
+            <p>[Premier paragraphe : poser la scène, présenter les personnes concernées.]</p>
+
+            <figure class="article-figure">
+                <img src="eclairage-public.jpg" alt="[Description précise de la photo pour les personnes malvoyantes]">
+                <figcaption>[Légende : lieu, ce que l'on voit.] Photo : [auteur], prise avec l'autorisation des personnes photographiées.</figcaption>
+            </figure>
+
+            <!-- 2. UNE EXPLICATION SIMPLE -->
+            <h2>[Intertitre : de quoi parle-t-on ?]</h2>
+            <p>[Expliquer le sujet sans accumuler les termes techniques. Si un mot technique est nécessaire, l'expliquer en une phrase.]</p>
+
+            <!-- 3. UNE OUVERTURE SUR LE TERRAIN -->
+            <h2>[Intertitre : ce que l'on observe sur le terrain]</h2>
+            <p>[Distances, infrastructures, coûts, maintenance, besoins des populations. Exemples concrets et vérifiables.]</p>
+
+            <blockquote class="article-quote">
+                <p>« [Citation exacte, recueillie avec l'accord de la personne. Ne jamais inventer ni reformuler une citation.] »</p>
+                <cite>[Prénom, rôle, village ou commune]</cite>
+            </blockquote>
+
+            <!-- 4. DES SOLUTIONS ET DES PERSPECTIVES -->
+            <h2>[Intertitre : quelles solutions, à quelles conditions ?]</h2>
+            <p>[Possibilités techniques, avantages, limites et conditions de réussite.]</p>
+
+            <aside class="article-box">
+                <h3>À retenir</h3>
+                <ul>
+                    <li>[Idée clé n° 1]</li>
+                    <li>[Idée clé n° 2]</li>
+                    <li>[Idée clé n° 3]</li>
+                </ul>
+            </aside>
+
+            <!-- 5. UNE CONCLUSION HUMAINE : réflexion, question ou invitation au débat -->
+            <h2>[Intertitre de conclusion]</h2>
+            <p>[Terminer sur une réflexion ou une question ouverte. Inviter les lecteurs à partager leur expérience.]</p>
+
+            <div class="article-share">
+                <span>Partager :</span>
+                <a href="#" data-share="whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                <a href="#" data-share="facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="#" data-share="linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+
+            <section class="article-sources" aria-label="Sources">
+                <h2>Sources</h2>
+                <ol>
+                    <li>[Organisme, titre du document, année — lien]</li>
+                    <li>[Entretien avec …, réalisé le …]</li>
+                </ol>
+            </section>
+
+            <p class="blog-editor-note"><a href="blog.html">&larr; Retour au blog</a> · Une erreur, un témoignage ? <a href="contact.html">Écrivez-nous</a>.</p>
+        </div>
+    </article>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 FOMALHAUT.MBC. Tous droits réservés.</p>
+                <p style="font-size: 13px; margin-top: 8px; opacity: 0.9;">📍 Cité Aboubacar (cité SENELEC) Villa N° 10 Kounoune – Rufisque, Dakar – Sénégal</p>
+                <p style="font-size: 13px; margin-top: 5px; opacity: 0.9;">📞 +221 78 756 98 00 / +221 76 793 00 06 | ✉ contact@fomalhaut.sn / fomalhaut.kd@gmail.com</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="expertises.html">Expertises</a></li>
+                <li><a href="nexus-line.html">Nexus Line</a></li>
+                <li><a href="mediatheque.html">Médiathèque</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

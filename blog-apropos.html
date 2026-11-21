@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    (function(){
+        var saved = localStorage.getItem('fomalhaut_theme');
+        var theme = saved || ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+    })();
+    </script>
+    <title>À propos du blog | L'Électricité au cœur des villages</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="description" content="La ligne éditoriale du blog L'Électricité au cœur des villages : notre mission, nos principes de rédaction et la place de FOMALHAUT.MBC comme éditeur.">
+    <link rel="canonical" href="https://fomalhaut.sn/blog-apropos.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="L'Électricité au cœur des villages">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:title" content="À propos du blog | L'Électricité au cœur des villages">
+    <meta property="og:description" content="La ligne éditoriale du blog L'Électricité au cœur des villages : notre mission, nos principes de rédaction et la place de FOMALHAUT.MBC comme éditeur.">
+    <meta property="og:image" content="https://fomalhaut.sn/og-image.jpg">
+    <meta property="og:url" content="https://fomalhaut.sn/blog-apropos.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="À propos du blog | L'Électricité au cœur des villages">
+    <meta name="twitter:description" content="La ligne éditoriale du blog L'Électricité au cœur des villages : notre mission, nos principes de rédaction et la place de FOMALHAUT.MBC comme éditeur.">
+    <meta name="twitter:image" content="https://fomalhaut.sn/og-image.jpg">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <header class="navbar">
+        <div class="logo-container">
+            <a href="index.html"><img src="logo-white.png" alt="FOMALHAUT.MBC" class="logo-img"></a>
+        </div>
+        <nav aria-label="Menu principal">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="expertises.html">Nos Expertises</a></li>
+                <li><a href="nexus-line.html">Nexus Line</a></li>
+                <li><a href="mediatheque.html">Médiathèque</a></li>
+                <li><a href="blog.html" class="active" aria-current="page">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <a href="devis.html" class="btn-cta-nav btn-devis">Demander un devis</a>
+            <a href="intervention.html" class="btn-cta-nav btn-depannage">Dépannage</a>
+            <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Activer le mode sombre">🌙</button>
+        </div>
+    </header>
+
+    <section class="page-header" id="main-content">
+        <p class="breadcrumb"><a href="blog.html">Blog</a> › À propos</p>
+        <h1>À propos du blog</h1>
+    </section>
+
+    <section class="section container">
+        <div class="blog-about">
+            <h2>Notre mission</h2>
+            <p><strong>L'Électricité au cœur des villages</strong> est un espace d'information et de réflexion consacré à l'accès à l'électricité dans les territoires ruraux du Sénégal. Nous voulons informer, expliquer, sensibiliser et donner la parole aux personnes qui vivent l'électrification au quotidien, comme à celles qui la rendent possible.</p>
+            <p>Notre conviction est simple : l'électrification rurale ne devrait pas se mesurer seulement aux kilomètres de lignes construites, mais aussi à ce que les populations peuvent désormais faire grâce à l'électricité.</p>
+
+            <h2>Notre vision</h2>
+            <p>Contribuer à faire de l'accès à une énergie fiable, sûre et durable un véritable levier de développement pour tous les territoires.</p>
+
+            <h2>Ce dont nous parlons</h2>
+            <ul>
+                <li><a href="blog.html#rubrique-villages">La vie dans nos villages</a> : témoignages et quotidien des populations.</li>
+                <li><a href="blog.html#rubrique-comprendre">Comprendre l'électrification rurale</a> : réseaux, postes, branchements, expliqués simplement.</li>
+                <li><a href="blog.html#rubrique-solaire">Le solaire et les énergies renouvelables</a> : solutions pour les zones isolées.</li>
+                <li><a href="blog.html#rubrique-terrain">Les réalités du terrain</a> : travaux, sécurité, maintenance.</li>
+                <li><a href="blog.html#rubrique-developpement">Électricité et développement local</a> : agriculture, santé, éducation, emploi.</li>
+                <li><a href="blog.html#rubrique-regards">Regards et initiatives</a> : la parole aux acteurs.</li>
+            </ul>
+
+            <h2>Nos règles de rédaction</h2>
+            <ul>
+                <li>Nous ne publions jamais de témoignage, de citation ou de chiffre inventé.</li>
+                <li>Chaque témoignage est recueilli avec l'accord de la personne, qui peut choisir de n'être citée que par son prénom.</li>
+                <li>Les photos sont prises sur le terrain, avec l'autorisation des personnes photographiées.</li>
+                <li>Les informations techniques sont vérifiées avant publication et nos sources sont indiquées en fin d'article.</li>
+                <li>Nous distinguons clairement ce qui relève des faits, de l'analyse et de l'opinion.</li>
+                <li>Quand nous parlons de « nos villages » ou de « nos territoires », c'est par attachement, pas pour prétendre parler au nom de toutes les communautés.</li>
+            </ul>
+
+            <h2>Qui publie ce blog ?</h2>
+            <p>Le blog est édité par <a href="apropos.html">FOMALHAUT.MBC</a>, entreprise sénégalaise d'ingénierie et d'installations énergétiques basée à Kounoune (Rufisque). Nos équipes travaillent chaque jour sur des réseaux électriques et des installations solaires, et c'est cette expérience du terrain que nous souhaitons partager.</p>
+            <p>Ce blog n'est pas une vitrine commerciale : les articles ont vocation à informer, pas à promouvoir nos services. Lorsqu'un article évoque un projet auquel FOMALHAUT.MBC a participé, nous le précisons clairement.</p>
+
+            <h2>Participer, nous corriger</h2>
+            <p>Vous souhaitez partager votre expérience, proposer un sujet ou nous signaler une erreur ? Écrivez-nous via la <a href="contact.html">page Contact</a> ou à <a href="mailto:contact@fomalhaut.sn">contact@fomalhaut.sn</a>. Les corrections importantes sont signalées en bas de l'article concerné.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 FOMALHAUT.MBC. Tous droits réservés.</p>
+                <p style="font-size: 13px; margin-top: 8px; opacity: 0.9;">📍 Cité Aboubacar (cité SENELEC) Villa N° 10 Kounoune – Rufisque, Dakar – Sénégal</p>
+                <p style="font-size: 13px; margin-top: 5px; opacity: 0.9;">📞 +221 78 756 98 00 / +221 76 793 00 06 | ✉ contact@fomalhaut.sn / fomalhaut.kd@gmail.com</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="expertises.html">Expertises</a></li>
+                <li><a href="nexus-line.html">Nexus Line</a></li>
+                <li><a href="mediatheque.html">Médiathèque</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
