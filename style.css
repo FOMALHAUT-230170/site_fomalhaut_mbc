@@ -1430,3 +1430,102 @@ footer {
         grid-column: 1 / -1;
     }
 }
+
+.article-status-published {
+    background: var(--pastel-violet);
+    color: var(--primary);
+}
+
+/* Tableaux et listes dans les articles */
+.article-table-wrap {
+    overflow-x: auto;
+    margin: 26px 0 8px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.article-table {
+    width: 100%;
+    min-width: 620px;
+    border-collapse: collapse;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.article-table th,
+.article-table td {
+    text-align: left;
+    vertical-align: top;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--input-border);
+}
+
+.article-table thead th {
+    background: var(--primary);
+    color: var(--white);
+    font-size: 14px;
+}
+
+.article-table tbody tr:nth-child(even) {
+    background: var(--surface-alt);
+}
+
+.status-ok, .status-wait, .status-ko {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 12.5px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.status-ok { background: #dff3e4; color: #1d6b34; }
+.status-wait { background: #fff1cc; color: #7a5600; }
+.status-ko { background: #fbe0e0; color: #a12325; }
+
+.table-note {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-top: 10px;
+}
+
+.article-body .table-note + p { margin-top: 18px; }
+
+.article-list {
+    padding-left: 22px;
+    margin: 10px 0 0;
+}
+
+.article-list li {
+    margin-bottom: 12px;
+}
+
+@media (max-width: 640px) {
+    .article-table { min-width: 0; }
+    .article-table thead { display: none; }
+    .article-table, .article-table tbody, .article-table tr, .article-table td { display: block; width: 100%; }
+    .article-table tr {
+        border: 1px solid var(--input-border);
+        border-radius: 8px;
+        margin-bottom: 14px;
+        overflow: hidden;
+    }
+    .article-table tbody tr:nth-child(even) { background: transparent; }
+    .article-table td { border-bottom: none; padding: 8px 14px; }
+    .article-table td:first-child { background: var(--surface-alt); padding-top: 12px; padding-bottom: 12px; }
+    .article-table td:not(:first-child)::before {
+        content: attr(data-label);
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: var(--text-muted);
+        margin-bottom: 2px;
+    }
+}
+
+.article-debate {
+    border-left-color: var(--secondary);
+}
+.article-debate p { font-size: 16.5px; }
